@@ -29,7 +29,7 @@ class DefaultController extends Controller
                 'createdTime' => '02:25',
                 'category' => 'Bar',
                 'picto' => 'chope',
-                'cards' => ['blue-card']
+                'cards' => ['blue-card'],
                 'card' => '41001210215486'
             ],
             [
@@ -39,7 +39,7 @@ class DefaultController extends Controller
                 'createdTime' => '02:25',
                 'category' => 'Vêtement',
                 'picto' => 'slip',
-                'cards' => ['blue-card']
+                'cards' => ['blue-card'],
                 'card' => '49851236587410'
             ],
             [
@@ -49,7 +49,7 @@ class DefaultController extends Controller
                 'createdTime' => '13:46',
                 'category' => 'SuperMarché',
                 'picto' => 'franprix',
-                'cards' => ['green-card']
+                'cards' => ['green-card'],
                 'card' => '41001210215486'
             ],
             [
@@ -59,7 +59,7 @@ class DefaultController extends Controller
                 'createdTime' => '12:25',
                 'category' => 'Restaurant',
                 'picto' => 'repas',
-                'cards' => ['blue-card', 'yellow-card']
+                'cards' => ['blue-card', 'yellow-card'],
                 'card' => '48569652321485'
             ],
         ];
