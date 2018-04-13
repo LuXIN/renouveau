@@ -15,7 +15,12 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request, SessionInterface $session)
     {
-        $consume = [''];
+        $monthConsume = [
+            ['month' => 'Ce mois', 'amount' => '545 €'],
+            ['month' => 'Mars', 'amount' => '852 €'],
+            ['month' => 'Février', 'amount' => '200 €'],
+            ['month' => 'Total', 'amount' => '1856 €'],
+        ];
         $transactions = [
             [
                 'commerce' => "L'escale",
@@ -67,9 +72,10 @@ class DefaultController extends Controller
 
         $categories = ['Bar', 'Vêtement', 'Restaurant', 'SuperMarché'];
 
-        $this->set('session')->set('transactions', $transactions);
-        $this->set('session')->set('cards', $cards);
-        $this->set('session')->set('categories', $categories);
+        $session->set('transactions', $transactions);
+        $session->set('cards', $cards);
+        $session->set('categories', $categories);
+        $session->set('monthConsume', $monthConsume);
 
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [

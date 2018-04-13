@@ -1,5 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
+<div class="container" style="text-align: center">
+    <img style="height: 200px;" src="{{ asset('images/rond.png') }}"/>
+    <div class="centered">Centered</div>
+</div>
+{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}" crossorigin="anonymous">
 {% endblock %}

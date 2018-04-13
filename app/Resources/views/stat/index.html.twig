@@ -1,9 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <ul>
-        {% for transaction in transactions %}
-            <li>{{ transaction.commerce }}</li>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        <ul>
+            {% for transaction in transactions %}
+                <li>{{ transaction.commerce }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
 {% endblock %}
