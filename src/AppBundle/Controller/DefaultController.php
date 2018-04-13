@@ -27,28 +27,32 @@ class DefaultController extends Controller
                 'amount' => '-97 €',
                 'createdDate' => '2018-04-13',
                 'createdTime' => '02:25',
-                'category' => 'Bar'
+                'category' => 'Bar',
+                'card' => '41001210215486'
             ],
             [
                 'commerce' => "Aubade",
                 'amount' => '-180 €',
                 'createdDate' => '2018-04-13',
                 'createdTime' => '02:25',
-                'category' => 'Vêtement'
+                'category' => 'Vêtement',
+                'card' => '49851236587410'
             ],
             [
                 'commerce' => "Franprix",
                 'amount' => '-14,30 €',
                 'createdDate' => '2018-04-13',
                 'createdTime' => '13:46',
-                'category' => 'SuperMarché'
+                'category' => 'SuperMarché',
+                'card' => '41001210215486'
             ],
             [
                 'commerce' => "Louvard",
                 'amount' => '-4,80 €',
                 'createdDate' => '2018-04-13',
                 'createdTime' => '12:25',
-                'category' => 'Restaurant'
+                'category' => 'Restaurant',
+                'card' => '48569652321485'
             ],
         ];
 
@@ -66,8 +70,8 @@ class DefaultController extends Controller
                 'cardNumber' => '41001210215486',
                 'category' => ['SuperMarché']
             ],
-            ['type' => 'creditCard', 'bank' => 'amex', 'cardNumber' => '41001210215486', 'category' => ['Bar']],
-            ['type' => 'fidelityCard', 'bank' => 'visa', 'cardNumber' => '41001210215486', 'category' => ['Vêtement']],
+            ['type' => 'creditCard', 'bank' => 'amex', 'cardNumber' => '49851236587410', 'category' => ['Bar']],
+            ['type' => 'fidelityCard', 'bank' => 'visa', 'cardNumber' => '48569652321485', 'category' => ['Vêtement']],
         ];
 
         $categories = ['Bar', 'Vêtement', 'Restaurant', 'SuperMarché'];
