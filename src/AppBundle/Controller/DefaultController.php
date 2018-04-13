@@ -28,6 +28,7 @@ class DefaultController extends Controller
                 'createdDate' => '2018-04-13',
                 'createdTime' => '02:25',
                 'category' => 'Bar',
+                'picto' => 'chope',
                 'cards' => ['blue-card']
             ],
             [
@@ -36,6 +37,7 @@ class DefaultController extends Controller
                 'createdDate' => '2018-04-13',
                 'createdTime' => '02:25',
                 'category' => 'Vêtement',
+                'picto' => 'slip',
                 'cards' => ['blue-card']
             ],
             [
@@ -44,6 +46,7 @@ class DefaultController extends Controller
                 'createdDate' => '2018-04-13',
                 'createdTime' => '13:46',
                 'category' => 'SuperMarché',
+                'picto' => 'franprix',
                 'cards' => ['green-card']
             ],
             [
@@ -52,6 +55,7 @@ class DefaultController extends Controller
                 'createdDate' => '2018-04-13',
                 'createdTime' => '12:25',
                 'category' => 'Restaurant',
+                'picto' => 'repas',
                 'cards' => ['blue-card', 'yellow-card']
             ],
         ];

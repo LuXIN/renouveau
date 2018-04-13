@@ -2,24 +2,22 @@
 
 {% block body %}
 	<div style="text-align: center; margin-top: 50px; background-color: #0099ff; color: white; padding: 1px;">
-		<a href="">&lt;</a><h5>HISTORIQUE DE TRANSACTIONS</h5>
+		<h5>HISTORIQUE DE TRANSACTIONS</h5>
 	</div>
-
-	{{ dump(transactions) }}
 	{% for transaction in transactions %}
 		<ul class="list-inline">
-			<li><img src="{{ asset('/images/chope.png') }}" style="width: 70%;" /></li>
+			<li><img src="{{ asset('/images/' ~transaction.picto~ '.png') }}" style="width: 70%;" /></li>
 			<li>
 				<span>
 					<b>{{ transaction.commerce }}</b><br>
 					{{ transaction.createdTime }}
 				</span>
 			</li>
+			{% for card in transaction.cards %}
 			<li>
-				
-				<img src="{{ asset('/images/blue-card.png') }}" style="width: 70%;" />
-				
+				<img src="{{ asset('/images/' ~ card ~ '.png') }}" style="width: 70%;" />
 			</li>
+			{% endfor %}
 			<li><span>{{ transaction.amount }}</span></li>
 		</ul>
 	{% endfor %}
