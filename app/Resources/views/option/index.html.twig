@@ -4,6 +4,7 @@
 	<div style="text-align: center; margin-top: 50px; background-color: #0099ff; color: white; padding: 1px;">
 		<h5>HISTORIQUE DE TRANSACTIONS</h5>
 	</div>
+	<div style="margin-top: 50px;">
 	{% for transaction in transactions %}
 		<ul class="list-inline">
 			<li><img src="{{ asset('/images/' ~transaction.picto~ '.png') }}" style="width: 70%;" /></li>
@@ -21,4 +22,5 @@
 			<li><span>{{ transaction.amount }}</span></li>
 		</ul>
 	{% endfor %}
+	</div>
 {% endblock %}
