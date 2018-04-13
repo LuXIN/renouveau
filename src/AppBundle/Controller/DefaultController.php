@@ -27,28 +27,32 @@ class DefaultController extends Controller
                 'amount' => '-97 €',
                 'createdDate' => '2018-04-13',
                 'createdTime' => '02:25',
-                'category' => 'Bar'
+                'category' => 'Bar',
+                'cards' => ['blue-card']
             ],
             [
                 'commerce' => "Aubade",
                 'amount' => '-180 €',
                 'createdDate' => '2018-04-13',
                 'createdTime' => '02:25',
-                'category' => 'Vêtement'
+                'category' => 'Vêtement',
+                'cards' => ['blue-card']
             ],
             [
                 'commerce' => "Franprix",
                 'amount' => '-14,30 €',
                 'createdDate' => '2018-04-13',
                 'createdTime' => '13:46',
-                'category' => 'SuperMarché'
+                'category' => 'SuperMarché',
+                'cards' => ['green-card']
             ],
             [
                 'commerce' => "Louvard",
                 'amount' => '-4,80 €',
                 'createdDate' => '2018-04-13',
                 'createdTime' => '12:25',
-                'category' => 'Restaurant'
+                'category' => 'Restaurant',
+                'cards' => ['blue-card', 'yellow-card']
             ],
         ];
 
