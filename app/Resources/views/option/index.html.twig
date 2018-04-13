@@ -1,1 +1,8 @@
 {% extends 'base.html.twig' %}
+
+{% block body %}
+	<center><h2 style="margin-top: 70px;">Mes transactions</h2></center>
+	{% for transaction in transactions %}
+	{{ dump(transaction) }}
+	{% endfor %}
+{% endblock %}

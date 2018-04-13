@@ -67,9 +67,9 @@ class DefaultController extends Controller
 
         $categories = ['Bar', 'Vêtement', 'Restaurant', 'SuperMarché'];
 
-        $session->set('transactions', $transactions);
-        $session->set('cards', $cards);
-        $session->set('categories', $categories);
+        $this->set('session')->set('transactions', $transactions);
+        $this->set('session')->set('cards', $cards);
+        $this->set('session')->set('categories', $categories);
 
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [

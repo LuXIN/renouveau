@@ -18,9 +18,15 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            /* Set the fixed height of the footer here */
             height: 60px;
             background-color: #f5f5f5;
+        }
+        @font-face {
+            font-family: "Museo Sans";
+            src: url('https://typekit.com/fonts/museo-sans');
+        }
+        body {
+            font-family: "Museo Sans";
         }
     </style>
     {% block stylesheets %}{% endblock %}
@@ -79,12 +85,12 @@
                         </a>
                     </li>
                     <li style="width: 22%;">
-                        <a href="#">
+                        <a href="{{ path('stat') }}">
                             <img src="{{ asset('/images/picto-stats.png') }}" style="width: 90%;" />
                         </a>
                     </li>
                     <li style="width: 22%;">
-                        <a href="#">
+                        <a href="{{ path('option') }}">
                             <img src="{{ asset('/images/picto-options.png') }}" style="width: 90%;" />
                         </a>
                     </li>

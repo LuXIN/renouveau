@@ -14,9 +14,9 @@ class OptionController extends Controller
      */
     public function indexAction(Request $request)
     {
-        // replace this example code with whatever you need
+        $transactions = $this->get('session')->get('transactions');
         return $this->render('option/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+            'transactions' => $transactions,
         ]);
     }
 }
