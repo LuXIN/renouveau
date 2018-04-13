@@ -65,21 +65,23 @@ class DefaultController extends Controller
         ];
 
         $cards = [
-            ['type' => 'creditCard', 'bank' => 'visa', 'cardNumber' => '41001210215486', 'category' => ['Vêtement']],
+            ['type' => 'creditCard', 'bank' => 'visa', 'cardNumber' => '41001210215486', 'category' => ['Vêtement'], 'picto' => 'blue-card'],
             [
                 'type' => 'creditCard',
                 'bank' => 'apetitz',
                 'cardNumber' => '41001210215486',
-                'category' => ['Restaurant', 'Bar']
+                'category' => ['Restaurant', 'Bar'],
+                'picto' => 'black-card'
             ],
             [
                 'type' => 'creditCard',
                 'bank' => 'mastercard',
                 'cardNumber' => '41001210215486',
-                'category' => ['SuperMarché']
+                'category' => ['SuperMarché'],
+                'picto' => 'yellow-card'
             ],
-            ['type' => 'creditCard', 'bank' => 'amex', 'cardNumber' => '49851236587410', 'category' => ['Bar']],
-            ['type' => 'fidelityCard', 'bank' => 'visa', 'cardNumber' => '48569652321485', 'category' => ['Vêtement']],
+            ['type' => 'creditCard', 'bank' => 'amex', 'cardNumber' => '49851236587410', 'category' => ['Bar'], 'picto' => 'green-card'],
+            ['type' => 'fidelityCard', 'bank' => 'visa', 'cardNumber' => '48569652321485', 'category' => ['Vêtement'], 'picto' => 'black-card'],
         ];
 
         $categories = ['Bar', 'Vêtement', 'Restaurant', 'SuperMarché'];
