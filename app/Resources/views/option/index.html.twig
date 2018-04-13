@@ -6,21 +6,23 @@
 	</div>
 	<div style="margin-top: 50px;">
 	{% for transaction in transactions %}
-		<ul class="list-inline">
-			<li><img src="{{ asset('/images/' ~transaction.picto~ '.png') }}" style="width: 70%;" /></li>
-			<li>
-				<span>
-					<b>{{ transaction.commerce }}</b><br>
-					{{ transaction.createdTime }}
-				</span>
-			</li>
-			{% for card in transaction.cards %}
-			<li>
-				<img src="{{ asset('/images/' ~ card ~ '.png') }}" style="width: 70%;" />
-			</li>
-			{% endfor %}
-			<li><span>{{ transaction.amount }}</span></li>
-		</ul>
+		<a href="">
+			<ul class="list-inline">
+				<li><img src="{{ asset('/images/' ~transaction.picto~ '.png') }}" style="width: 70%;" /></li>
+				<li>
+					<span>
+						<b>{{ transaction.commerce }}</b><br>
+						{{ transaction.createdTime }}
+					</span>
+				</li>
+				{% for card in transaction.cards %}
+				<li>
+					<img src="{{ asset('/images/' ~ card ~ '.png') }}" style="width: 70%;" />
+				</li>
+				{% endfor %}
+				<li><span>{{ transaction.amount }}</span></li>
+			</ul>
+		</a>
 	{% endfor %}
 	</div>
 {% endblock %}
